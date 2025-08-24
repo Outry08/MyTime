@@ -1,0 +1,376 @@
+body,
+html {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 20% 50% 10%;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0px;
+    background: gray;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+#theMain {
+    height: 100vh;
+}
+
+#root {
+    height: 100%;
+}
+
+#logoContainer {
+    text-align: center;
+}
+
+#logo {
+    height: 150px;
+    margin-top: 10px;
+}
+
+#logoContainer p {
+    font-family: "Copperplate";
+    font-size: 50px;
+    margin: 0;
+    line-height: 0.8em;
+    margin-bottom: 10px;
+}
+
+.header li {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0px;
+    background: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+}
+
+.header li:hover:not(.header li:nth-child(3)) {
+    background: gray;
+}
+
+#main-content {
+    box-sizing: border-box;
+    height: calc(100% - 50px);
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#main-content aside {
+    height: 100%;
+    border: 1px solid black;
+}
+
+#main-content aside h3 {
+    text-align: center;
+}
+
+#main-content main {
+    height: 100%;
+    border: 1px solid black;
+}
+
+#activityInput::placeholder {
+    color: rgb(221, 221, 221);
+}
+
+.activityNameContainer {
+    margin: 0px 5px;
+    padding: 0px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#newActivityForm {
+    margin-left: 30px;
+}
+
+.activitySave {
+    height: 23px;
+    display: inline-flex;
+    align-items: center;
+    color: green;
+    width: 51px;
+}
+
+.warningMessage {
+    display: none;
+    color: red;
+}
+
+.activityDelete {
+    height: 23px;
+    width: 63px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(128, 0, 0);
+}
+
+#activityList {
+    overflow-y: scroll;
+    height: calc(100vh - 450px);
+}
+
+.actionHeader {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.menuContainer {
+    margin: 5px 5px;
+    padding: 0px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.menuContainer p {
+    float: left;
+    user-select: none;
+    line-height: 40px;
+    height: 40px;
+    margin: 0px;
+    text-align: left;
+    box-sizing: border-box;
+    width: 60px;
+    font-size: 15px;
+}
+
+.menuContainer input,
+.menuContainer select {
+    width: calc(100% - 60px);
+    height: 40px;
+    float: right;
+    cursor: text;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#activityInput {
+    width: calc(100% - 60px - 45px);
+    float: left;
+    cursor: pointer;
+}
+
+#addElement {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-weight: 900;
+    font-size: 25px;
+    margin: auto;
+    float: right;
+    align-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+#submit {
+    margin: 5px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.input,
+.react-datepicker-wrapper input {
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+    background: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 0px;
+    box-shadow: rgb(226, 226, 226) 3px 3px 2px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#signOut {
+    width: calc(100% - 10px);
+    margin: 0px 5px 5px;
+    box-sizing: border-box;
+    display: inline;
+    box-shadow: none;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main #MainGraph {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.recharts-layer,
+.recharts-pie {
+    outline: none;
+}
+
+.activityColorContainer {
+    height: 40px;
+}
+
+#colorPicker {
+    float: left;
+    height: 40px;
+    margin: 0px 0px 5px 5px;
+    padding: 0px;
+    width: 115px;
+    box-sizing: border-box;
+}
+
+#colorpicker {
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+.listActivityName {
+    list-style: initial;
+    padding: 0;
+}
+
+.updateColorPickers {
+    height: 23px;
+}
+
+.updateTimePickers {
+    width: 65px;
+    height: 23px;
+    background-image: url("/clock.png");
+    background-color: rgb(239, 239, 239);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: text;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#submitActivity {
+    margin: 0 5px 5px 0;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: right;
+    width: calc(100% - 125px);
+    box-sizing: border-box;
+}
+
+.centeredText {
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.widget {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#timeFrame {
+    height: calc(100% - 20px);
+    background: #f0f0f0;
+}
+
+#topActivities {
+    background: #d6d6d6;
+    height: calc(100% - 20px);
+}
+
+#widgets {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#main-content-section {
+    box-sizing: border-box;
+    height: calc(100% - 50px);
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+#timeFrameSelect {
+    float: right;
+    height: 40px;
+    width: 100%;
+}
+
+#summaryHeader h3 {
+    float: left;
+}
+
+.active {
+    background-color: #525252 !important;
+}
+
+#summaryHeader {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    place-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+#topActivities table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#topActivities table td,
+#topActivities table th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+#topActivities table tr:nth-child(odd) {
+    background: #bdbdbd;
+}
+
+#topActivities table tr:nth-child(even) {
+    background: #a1a1a1;
+}
+
+#topActivities table tr:nth-child(1) {
+    background: #4e4e4e;
+    color: white;
+}
+
+#nameInput {
+    float: right;
+    margin-right: 5px;
+    box-shadow: none;
+    height: 30px;
+}
+
+#nameSubmit {
+    float: right;
+    margin-right: 5px;
+    height: 30px;
+    box-shadow: none;
+}
